@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.BoardMapper">
+<!-- select 태그 사용해서 id를 부여 -->
+
+	<select id="boardList" resultType="kr.smhrd.mapper.BoardVO">
+		select * from tbl_board 
+	</select>
+	<!-- 이렇게 연결만 하면 끝! 작동하게 해주는 API가 있기 떄문에 -->
+</mapper>
+
+
+<!-- insert, select, delete, update 기능 넣는 dao (SQL문) -->
